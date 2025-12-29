@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": [ "authenticated" ]
+    }
+  ],
+  "auth": {
+    "identityProviders": {
+      "google": {
+        "registration": {
+          "allowedUsers": [
+            "joshuaphendrix@gmail.com"
+          ]
+        }
+      }
+    }
+  }
+}
