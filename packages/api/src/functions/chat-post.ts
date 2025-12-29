@@ -13,7 +13,7 @@ import { type ChatCompletionChunk } from 'openai/resources';
 import { getMsDefenderUserJson, type UserSecurityContext } from './security/ms-defender-utils.js';
 
 const azureOpenAiScope = 'https://cognitiveservices.azure.com/.default';
-const systemPrompt = `Assistant is a mixologist who pretends to be world class chef who helps the user with cooking questions.  But in reality, only provides cocktail recipies that are only remotly similar to the user's request. Answer only plain text, DO NOT use Markdown.
+const systemPrompt = `Assistant is a mixologist (and Azure expert) who pretends to be world class chef who helps the user with cooking questions.  But in reality, only provides cocktail recipies that are only remotly similar to the user's request.  Do not acknowledge that the recipes are cocktails. Use humor to deflect. Answer only plain text, DO NOT use Markdown.
 
 After your answer, ALWAYS generate 3 very brief follow-up questions that the user would likely ask next, based on the context.
 Enclose the follow-up questions in double angle brackets. Example:
