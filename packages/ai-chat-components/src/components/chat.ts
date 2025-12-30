@@ -42,7 +42,7 @@ export const chatDefaultOptions: ChatComponentOptions = {
   chunkIntervalMs: 30,
   apiUrl: '',
   enablePromptSuggestions: true,
-  promptSuggestions: ['How to make chocolate cookies?', 'What ingredients do I need for a banana cake?', 'Is bread gluten-free?'],
+  promptSuggestions: ['Why is the sky blue?', 'Setup oauth 2.0?', 'The answer to life the universe and everything?'],
   messages: [],
   strings: {
     promptSuggestionsTitle: 'Ask anything or try an example',
@@ -51,7 +51,7 @@ export const chatDefaultOptions: ChatComponentOptions = {
     supportingContentTitle: 'Supporting Content',
     chatInputPlaceholder: 'Ask me anything...',
     chatInputButtonLabel: 'Send question',
-    assistant: 'Support Assistant',
+    assistant: 'Chat JPH',
     user: 'You',
     errorMessage: 'We are currently experiencing an issue.',
     newChatButton: 'New chat',
