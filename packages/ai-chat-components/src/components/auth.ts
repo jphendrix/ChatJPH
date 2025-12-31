@@ -5,7 +5,7 @@ import { styleMap } from 'lit/directives/style-map.js';
 import personSvg from '../../assets/icons/person.svg?raw';
 import logoutSvg from '../../assets/icons/logout.svg?raw';
 import microsoftSvg from '../../assets/providers/microsoft.svg?inline';
-import githubSvg from '../../assets/providers/github.svg?inline';
+//import githubSvg from '../../assets/providers/github.svg?inline';
 
 const loginRoute = '/.auth/login';
 const logoutRoute = '/.auth/logout';
@@ -39,9 +39,16 @@ export const authDefaultOptions: AuthComponentOptions = {
     logoutButton: 'Log out',
   },
   providers: [
-    { id: 'aad', label: 'Log in with Microsoft', icon: microsoftSvg, color: '#00A4EF', textColor: '#fff' },
-    { id: 'github', label: 'Log in with GitHub', icon: githubSvg, color: '#181717', textColor: '#fff' },
-    /*{
+    { id: 'aad', label: 'Log in with Microsoft', icon: microsoftSvg, color: '#00A4EF', textColor: '#fff' }
+    /*
+    { 
+      id: 'github', 
+      label: 'Log in with GitHub', 
+      icon: githubSvg, 
+      color: '#181717', 
+      textColor: '#fff' 
+    },
+    {
       id: 'google',
       label: 'Log in with Google',
       icon: 'https://cdn.simpleicons.org/google/white',
